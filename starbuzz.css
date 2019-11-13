@@ -1,0 +1,21 @@
+body {
+  background-color: seashell;
+  color: black;
+  font-family: sans-serif;
+}
+h1, h3 {
+  color: red;
+}
+h1{
+  font-family: fantasy;
+  font-size: 25px;
+}
+h3 {
+  color: brown;
+}
+span {
+  color: green;
+}
+#special {
+color: blue;
+}
