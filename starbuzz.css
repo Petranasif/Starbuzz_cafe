@@ -14,9 +14,17 @@ h3 {
   color: brown;
   font-size: 25;
 }
+.tea {
+  color: green;
+  font-family: monospace;
+}
+.coffee {
+  color: rgb(117, 35, 35);
+}
 span {
   color: green;
 }
+
 #special {
 color: blue;
 }
@@ -24,3 +32,4 @@ color: blue;
   color: brown;
   font-family:fantasy;
 }
+
