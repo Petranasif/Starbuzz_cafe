@@ -1,0 +1,48 @@
+body {
+    height: 3000px;
+}
+div div {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+}
+.container {
+    background-color: cornflowerblue;
+    width: 300px;
+    position: relative;
+    left: 30%
+
+}
+div div:first-child {
+    background-color: burlywood;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    z-index: 1; 
+    /* toti de obicei by default au z-index 0. in cazul nostru
+    relative deoarece in ordinea este ultimul div atunci va fi peste absolute
+    iar ca sa punem absolutul peste relative, setam z-index pentru
+    absolute 1 */
+
+}
+div div:nth-child(2) {
+    background-color: rgb(224, 189, 46);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+div div:nth-child(3) {
+    background-color: darkmagenta;
+    position: sticky;
+    top: 5%;
+    left: 5%;
+}
+div div:last-child {
+    background-color: cadetblue;
+    position: relative;
+    bottom: 10px;
+    left: 50%;
+    /* z-index: 2; daca pun aici 2, el iara se suprapune cu absolutul*/ 
+ 
