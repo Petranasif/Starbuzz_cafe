@@ -1,0 +1,24 @@
+
+
+#first {
+    font-family: sans-serif;
+    color: rgb(58, 212, 58);
+    font-weight: normal;
+}
+
+#first span{
+    color: black;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(54, 124, 214);
+    
+}
+div {
+    border: 2px solid black;
+    margin: auto;
+    width: 25%;
+    text-align: center;
+    background-color: rgb(233, 233, 52);
+}
