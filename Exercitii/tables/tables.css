@@ -1,30 +1,31 @@
 table {
     margin: auto;
-    margin-top: 20px;
     border: 2px solid black;
-    /* background-color: burlywood; */
+    margin-top: 30px;
+    /* padding: 20px; de obicei nu se pune padding*/
+    background-color: bisque; 
     border-spacing: 0px;
-    border-collapse: collapse; 
-    /* border collapse uniste bordurile intre 
-    ele din toate celulele si atunci ramane una */
+    border-collapse: collapse;
+    caption-side: bottom;
 }
-
 th {
     background-color: cadetblue;
-    /* border-bottom: 2px solid black; */
     border: 1px solid black;
+    /* border-bottom: 2px solid black; */
     text-align: left;
     padding: 10px;
 }
 td {
     border: 1px solid black;
-    /* border-top: 1px solid black; */
-    /* border-bottom: 1px solid black; */
+    /* background-color: cornflowerblue; am sters culoarea la td
+    deoarece cand am scis jos culoare la tr nu a luato deorece td
+    deja avea definit o culoare*/
     padding: 10px;
+    /* width: 20%; */
 }
 tr:nth-child(even) {
-    background-color: white;
+    background-color: cornsilk;
 }
 tr:nth-child(odd) {
-    background-color: gray;
+    background-color: darkgray;
 }

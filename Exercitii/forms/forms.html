@@ -9,18 +9,39 @@
 </head>
 <body>
     <form action="" method="post">
-        <label for="first_name">Name:</label>
-        <input type="text" name="first_name" id="name">
+        <label for="name">Name:</label>
+        <input type="text" name="first_name" id="name" placeholder="your name" >
         <br/>
-        <input type="checkbox" name="remember" id="remember">
         <label for="remember">Remember me</label>
-        <br>
+        <input type="checkbox" name="remember" id="remember">
+        <br/>
         <fieldset>
             <label for="female">female</label>
-            <input type="radio" name="gender" id="female">
-            <label for="male">male</label>
-            <input type="radio" name="gender" id="male">
-         </fieldset>
+            <input type="radio" name="gender" id="female" value=female>
+            <label for="female">Male</label>
+            <input type="radio" name="gender" id="male" value=male>
+        </fieldset>
+        <label for="Comment">Comment:</label>
+        <textarea name="Comment" id="Comment" cols="30" rows="10" placeholder="write a message" ></textarea>
+        <br/>
+        <label for="city">City</label>
+        <select name="city" id="city">
+            <option value="buc">Bucharest</option>
+            <option value="dm">Damascus</option>
+            <option value="ny">New York</option>
+        </select>
+        <br>
+        <input type="search" name="search" id="search">
+        <input type="date" name="date" id="date">
+        <input type="time" name="" id="">
+        <br/>
+        <input type="range" name="" id="" min="1" max="100" step="10" value="1">
+       <!-- la range, value insema de la ce numr sa incepe. -->
+       <input type="color" name="" id="">
+       <input type="submit" value="submit">
+       <input type="button" value="Another button">
+
+    </form>
        
 
 </form>
