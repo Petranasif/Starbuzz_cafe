@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    
+    
+}
+img {
+    display: block;
+    margin: auto;
+}
+input[type=search] {
+    display: block;
+    margin: auto;
+}
+input[type=button] {
+    display: inline-block;
+    margin: auto;
+}
