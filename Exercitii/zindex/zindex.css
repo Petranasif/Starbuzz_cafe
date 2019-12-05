@@ -1,0 +1,27 @@
+div:first-child {
+    background-color: blueviolet;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    opacity: 0.5;
+    /* cu opacity, cand e 1 insemna ca e complet opac, adica este saturat iar cand ii scad de 1 
+    atunci incepe sa devina transparent. opacitatea se aplica nu doar la culoare ci si la text si atunci ca sa aplicam 
+    o culoare transparenta la div, ne jucam doar la background color, si folosim (rgba) */
+}
+div:nth-child(2) {
+    background-color: red;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    z-index: -1;
+    /* cu z-index(-1) am pus patratul rosu in spatele ala mov , by default cand creez divurile ei au z-index 0*/
+}
+div:nth-child(3) {
+    margin-top: 30%;
+    /* elementele care sunt positionate ei vin deasupra celor care nu au specificata o pozitie */
+    position: relative;
+}

@@ -1,0 +1,42 @@
+div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 20%;
+    left: 20%;
+    background-color: rosybrown;
+    text-align: center;
+    line-height: 200px;
+    border-radius: 50%;
+}
+div {
+    animation-name: rotate;
+    animation-duration: 2s;
+    /* duration adica cat dureaza o rotatie. daca o rotatie dureaza mai mult atunci va fi incet, cu cat o rotatie dureaza mai putin rotarea va fi mai rapida. */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: backwards;
+
+}
+div:hover {
+    animation-play-state: paused;
+    /* adica cand pun mousul pe el sa se opreasca */
+
+}
+@keyframes rotate {
+/* trebuie sa ii dam un nume, ex:rotate, ca sa fie usor de identificat */
+    from {
+        transform: rotate(0deg);
+        left: 0%;
+        top: 20%;
+    }
+    50% {
+        top: 50%;
+    }
+    to {
+        transform: rotate(360deg);
+        left: 50%;
+        top: 20%;
+    }
+}

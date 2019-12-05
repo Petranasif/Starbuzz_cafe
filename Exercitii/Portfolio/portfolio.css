@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    font-family: sans-serif;
+    --my-color: rgb(203, 113, 48);
+    /* aici cu my color am stabilit culoara aia si cand o sa mai am nevoie de ea mai incolo
+    in cod nu mai are rost sa mai scriu cifrele de culoare pur si simplu scriu --my-color pe care
+    le-am definit */
+}
+nav {
+    background-color: var(--my-color);
+    text-align: right;
+}
+li {
+    display: inline-block;
+    padding: 0.5em;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+nav li:first-child {
+    font-size: 1.2em;
+}
+#home {
+    background-image: url("headerback.jpg");
+    height: 100vh;
+    /* vh este view height si mai este vw view width */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#overlay {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 100%;
+    width: 100%;
+}
+#container {
+    position: absolute;
+    width: 60%;
+    height: 25%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+h1 {
+    color: var(--my-color);
+    font-size: 2.3em;
+
+}
+#home p {
+    font-size: 1.2em;
+    color: rgb(85, 85, 85);
+    font-family: "DIN Alternate";
+    width: 50%;
+    padding: 1em 0;
+
+}
+input[type="button"] {
+    background-color: var(--my-color);
+    color: white;
+    font-size: 1.4em;
+    border-style: none;
+    border-radius: 5px;
+    padding: 0.3em;
+}
