@@ -14,7 +14,9 @@ div {
     animation-duration: 2s;
     /* duration adica cat dureaza o rotatie. daca o rotatie dureaza mai mult atunci va fi incet, cu cat o rotatie dureaza mai putin rotarea va fi mai rapida. */
     animation-iteration-count: infinite;
+    /* infinit adica sa faca animitatie non stop */
     animation-timing-function: linear;
+    /* timing function adica sa u aiba o pauza atunci cand se termin o rotatie */
     animation-direction: alternate-reverse;
     animation-fill-mode: backwards;
 
@@ -29,14 +31,20 @@ div:hover {
     from {
         transform: rotate(0deg);
         left: 0%;
-        top: 20%;
+        top: 50%;
+    }
+    25% {
+        top: 0%;
     }
     50% {
         top: 50%;
     }
+    75% {
+        top: 0%;
+    }
     to {
         transform: rotate(360deg);
-        left: 50%;
-        top: 20%;
+        left: 90%;
+        top: 50%;
     }
 }

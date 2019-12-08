@@ -27,6 +27,8 @@ nav li:first-child {
 }
 #home {
     background-image: url("headerback.jpg");
+    /* daca doar pun background image ea nu o sa iasa completa, deoarece ia dimensiunea articolului si atat. si e nevoie sa 
+    facem o dimensiune mai mare la articol prin height. */
     height: 100vh;
     /* vh este view height si mai este vw view width */
     background-repeat: no-repeat;

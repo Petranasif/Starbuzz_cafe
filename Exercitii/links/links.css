@@ -41,7 +41,9 @@ a::first-line {
     padding: 20px;
 }
 .dropdown:hover .magic {
+    cursor: pointer;
     display: block;
+    
 }
 
 .trans {
@@ -50,26 +52,30 @@ a::first-line {
     position: absolute;
     top: 50%;
     left: 50%;
+    padding: 30px;
+    transform: rotate(20deg) scale(1,2);
     /* transition: background-color 2s; */
-    transition: transform 1s, backgroud-color 2s;
+   
     transition: 1s;
 }
 .trans:hover {
     cursor: pointer;
-    padding: 30px;
-    transform: rotate(20deg) scale(1,2);
     /* 1=width, 2=height */
     background-color: yellowgreen;
+    transition: transform 1s, backgroud-color 2s;
 }
 
 .trans2 {
-    background-color: red;
+    background-color: aqua;
     position: absolute;
     top: 20%;
-    left: 20%;
+    left: 30%;
     padding: 30px;
-    transform: rotate(-30deg);
+    transform: rotate(-360deg);
+    /* rotirea by defaut se face n functie de centrul divului */
     transform-origin: top left;
     transition: transform 2s;
-    transition-delay: 1s;
+    /* daca vreau sa limitez tranzitia doar pt transformare, ar trebuie sa specific asta, ca eu
+    cand pun doar transition 1s atunci se face la tot ce am scris mai sus, adica culoare, padding etc */
+    transition-delay: 2s;
 }
