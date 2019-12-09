@@ -9,6 +9,7 @@ body {
     /* aici cu my color am stabilit culoara aia si cand o sa mai am nevoie de ea mai incolo
     in cod nu mai are rost sa mai scriu cifrele de culoare pur si simplu scriu --my-color pe care
     le-am definit */
+    padding-bottom: 1000px;
 }
 nav {
     background-color: var(--my-color);
@@ -69,4 +70,33 @@ input[type="button"] {
     border-style: none;
     border-radius: 5px;
     padding: 0.3em;
+}
+#container2 {
+    padding-top: 15em;
+}
+#about h1 {
+    color: var(--my-color);
+    text-align: center;
+}
+#john {
+    position: absolute;
+    left: 40% ;
+    width: 30%;
+    display: inline-block;
+    padding: 4em 1em ;
+    border: solid;
+    border-color: cadetblue;
+    border-width: 0px 0px 0px 4px;  
+}
+#john h2 {
+    color: cadetblue;
+}
+img {
+    position: absolute;
+    left: 26%;
+    border-radius: 50%;
+}
+#john p {
+    line-height: 2em;
+    font-size: 0.9em;
 }
