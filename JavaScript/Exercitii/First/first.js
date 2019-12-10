@@ -10,7 +10,7 @@
     var date = new Date();
     var hour = date.getHours();
 
-    if(hour==)
+ 
     if(hour >= 20 || hour <= 6) {
         alert("Noapte Buna!"); 
         alert("somn usor");
