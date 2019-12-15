@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="" method="post" onsubmit="return myfunction()">
+        <label for="age">Varsta</label>
+        <input type="text" name="age" id="age">
+        <br />
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function myfunction() {
+            var varsta = document.getElementById("age").value;
+            console.log(varsta);
+            
+            if (varsta <= 6) {
+                alert("Generation Alpha");
+            } else if (varsta <= 20) {
+                alert("Generation Z");
+            } else if (varsta <= 35) {
+                alert("Generation Y");
+            } else if (varsta <= 50) {
+                alert("Generation X");
+            } else if (varsta <= 69) {
+                alert("Babay Boomers");
+            } else {
+                alert("Builders");
+            }
+            return false;
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

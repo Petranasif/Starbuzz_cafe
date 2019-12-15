@@ -1,6 +1,6 @@
 
     var name = "petra";
-    var message = "Hello " + name + "!";
+    var message = "\"Hello\"" + name + "!";
     var timeout = 3000;
     var isNight = false;
     var isMorning = false;
@@ -24,6 +24,7 @@
 
     setTimeout(sayHello, timeout); 
     function sayHello() {
-        // alert(message);
-        console.log(message);
+        alert(message);
+        // console.log(message);
     } 
+    /* || inseamna sau, && inseamna si */
