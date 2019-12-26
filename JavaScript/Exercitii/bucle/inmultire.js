@@ -39,7 +39,7 @@ j=2
 i=10 nu mai merge merg in for de sus
 j=3
 i=1
-si asa....
+si asa.... */
 
 
 
