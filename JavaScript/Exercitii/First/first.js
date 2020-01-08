@@ -25,6 +25,6 @@
     setTimeout(sayHello, timeout); 
     function sayHello() {
         alert(message);
-        // console.log(message);
+        console.log(message);
     } 
     /* || inseamna sau, && inseamna si */
