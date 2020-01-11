@@ -5,7 +5,7 @@ var car = {   /*obiectul*/
     color: "gray",
     passengers: 4,
     mileage: 2000,
-    engineIsOn: false,
+    engineIsOn: false, //aceasta este o proprietate care ne spuna ca masina este pornita.
     fuel: 50, /* cat benzina am*/
     maxFuel: 50, /*capacitatea rezervorul*/
     mediumConsumption: 7.5, 
@@ -52,10 +52,12 @@ var car = {   /*obiectul*/
         
     }, /* foarte important sa pun virgula dupa } */
 }
+// ca sa schimbam kiometrajul facem asa:
 car.mileage = 2150;
 console.log(car["mileage"]); /* o varianta de a afisa proprietatea variantei car este car.numele proprietaii
 o alta metoda este car["numele proprietati"]  dar deobicei se foloseste varianta cu punct*/
 console.log(car.year);
+// ca sa pornim masina:
 car.start(); /* ca sa definim actiunea am pus () adica apeeaza blocul de cod sus cu function */
 car.start();
 car.engineIsOn = false;
