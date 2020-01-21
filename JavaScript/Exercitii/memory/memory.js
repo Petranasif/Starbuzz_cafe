@@ -16,6 +16,9 @@ const animals = [
    const url = 'https://png.icons8.com/100/000000/color/';
 
    var images = animals.map(x => url + x + '.png')
+//    var images = animals.map(function(x){
+//        return url+x+".png";
+//    })
 
    images = images.concat(images);
 
@@ -43,6 +46,7 @@ const animals = [
 
    var active = [];
    function onClick(event) {
+       console.log(event)
        if(active.length == 0) {
            active.push(event.target); /*targetul este li pe care s-a dat click*/
            event.target.querySelector('img').style.visibility = "visible";
