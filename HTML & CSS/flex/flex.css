@@ -1,0 +1,14 @@
+nav{
+    background-color: dimgray;
+    display: flex;
+    justify-content: space-around; /* lasa un spatiu egal intre divurile din nav, adica lasa spatiu stanga unui div si dreapta lui */
+}
+div:first-child {
+    background-color: cadetblue;
+}
+div:nth-child(2) {
+    background-color: darkkhaki;
+}
+div:last-child {
+    background-color: darksalmon;
+}
