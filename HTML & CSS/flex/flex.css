@@ -1,14 +1,14 @@
-nav{
-    background-color: dimgray;
+nav {
+    background-color: lightseagreen;
     display: flex;
-    justify-content: space-around; /* lasa un spatiu egal intre divurile din nav, adica lasa spatiu stanga unui div si dreapta lui */
+    justify-content: space-around;
 }
 div:first-child {
-    background-color: cadetblue;
+    background-color: khaki;
 }
 div:nth-child(2) {
-    background-color: darkkhaki;
+    background-color: lavender;
 }
 div:last-child {
-    background-color: darksalmon;
+    background-color: lightblue;
 }

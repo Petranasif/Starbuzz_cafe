@@ -1,0 +1,22 @@
+svg {
+    width: 500px;
+    height: 500px;
+}
+svg circle {
+    stroke: steelblue;
+    transform: scale(3); /* scale adica il dublam. dublam cercul*/
+    fill: tan;
+    /* r: 20px; */
+    animation-name: animate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes animate {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(4);
+    }
+}

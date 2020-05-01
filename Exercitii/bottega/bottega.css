@@ -1,0 +1,61 @@
+*, *::befor, *::after {
+    margin: 0em;
+    padding: 0em;
+}
+.welcome, .portfoliu {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top:0;
+    left: 0;
+}
+.welcome {
+    z-index: 1;
+    background-color: black;
+    background-image: url('1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.portfoliu {
+    z-index: 0;
+}
+.title {
+    font-family: serif;
+    color: white;
+    font-size: 10em;
+    font-weight: bold;
+    margin-top: 1em; 
+}
+.enter {
+    font-family: sans-serif;
+    color: white;
+    font-size: 2.5em;
+    margin: 2em;
+    position: relative;
+    cursor: pointer;
+}
+.enter::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    background-color: black;
+    width: 0;
+    /* transition-property: width; */
+    transition-duration: 0.5s;
+
+}
+.enter:hover::after {
+    width: 100%;
+    background-color: white;
+    
+    
+}
+ 
